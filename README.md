@@ -1,4 +1,4 @@
-# Airport arrival scraping tool for Heathrow and Luton airports  
+# Flight arrival scraping tool for Heathrow and Luton airports  
 ## Backend
 Backend is written in ASP.NET Core 3.1
 ### Running the app
@@ -9,7 +9,7 @@ The backend will start and will be available at:  `https://localhost:5001/api/Fl
 ### Tests
 Navigate to `Airport.Test` folder and execute: `dotnet test`
 ## Frontend
-Fronted is written in Angular 10  
+Frontend is written in Angular 10  
 ### Running the app
 Navigate to the `AirportClient` folder and execute the following command:
 `ng serve --o`
