@@ -1,0 +1,9 @@
+table {
+    margin: 1.5em;
+    border: 1px;
+    width: 100%;
+}
+
+tbody td {
+    text-align: left;
+}

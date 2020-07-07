@@ -1,0 +1,39 @@
+<form>
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-addon">
+          <i class="glyphicon glyphicon-search"></i>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          name="searchString"
+          placeholder="Type to search..."
+          [(ngModel)]="searchString"
+        />
+      </div>
+    </div>
+  </form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Airport</th>
+            <th>Terminal</th>
+            <th>Flight Number</th>
+            <th>Scheduled</th>
+            <th>Arriving From</th>
+            <th>Status</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let flightInfo of flightsData | filter : searchString; let i = index">
+            <td>{{ flightInfo.airport }}</td>
+            <td>{{ flightInfo.terminal }}</td>
+            <td>{{ flightInfo.flightId }}</td>
+            <td>{{ flightInfo.scheduled }}</td>
+            <td>{{ flightInfo.arrivingFrom  }}</td>
+            <td>{{ flightInfo.status  }}</td>
+        </tr>
+    </tbody>
+</table>
